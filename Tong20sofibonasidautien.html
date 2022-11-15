@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 20 số fibonasi đầu tiên</title>
+</head>
+<body>
+<script>
+  let a=b=1;
+  let next;
+  tong=0;
+  let n= +prompt('Nhập số lượng số Fibonasi :');
+  for (let i=1;i<=n-2;i++){
+    next=a+b;
+    a=b;
+    b=next;
+    tong += next;
+  }
+  document.write(tong + '<br>');
+
+</script>
+</body>
+</html>

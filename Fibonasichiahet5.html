@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonasi chia hết cho 5</title>
+</head>
+<body>
+<script>
+  let a=b=1;
+  let next;
+  for (let i=1;;i++){
+    next=a+b;
+    a=b;
+    b=next;
+    if(next % 5 ===0){
+    break;}
+  }
+    document.write(next + '<br>');
+</script>
+</body>
+</html>

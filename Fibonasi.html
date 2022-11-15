@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonasi</title>
+</head>
+<body>
+<script>
+    let a=b=1;
+    let next;
+    let n= +prompt('Nhập số lượng số Fibonasi :');
+    document.write(a +'<br>');
+    document.write(b+'<br>' );
+    for (let i=1;i<=n-2;i++){
+        next=a+b;
+        a=b;
+        b=next;
+        document.write(next + '<br>');
+    }
+</script>
+</body>
+</html>
